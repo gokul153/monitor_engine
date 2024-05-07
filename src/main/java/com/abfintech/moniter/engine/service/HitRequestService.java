@@ -70,24 +70,28 @@ public class HitRequestService {
                         } catch (URISyntaxException e) {
                             e.printStackTrace();
                         }
+                        break;
                     case GET:
                         try {
                             remoteServiceClient.sendGetRequest(new URI(request.getUrl()),  request.getHeaders(), request.getParams());
                         } catch (URISyntaxException e) {
                             e.printStackTrace();
                         }
+                        break;
                     case PUT:
                         try {
                             remoteServiceClient.sendPutRequest(new URI(request.getUrl()), request.getRequestBody(),  request.getHeaders(), request.getParams());
                         } catch (URISyntaxException e) {
                             e.printStackTrace();
                         }
+                        break;
                     case DELETE:
                         try {
                             remoteServiceClient.sendDeleteRequest(new URI(request.getUrl()), request.getHeaders(), request.getParams());
                         } catch (URISyntaxException e) {
                             e.printStackTrace();
                         }
+                        break;
                 }
             });
         }

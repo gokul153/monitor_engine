@@ -13,8 +13,15 @@ public class CheckPartnerRequestController {
     @Autowired
     HitRequestService hitRequestService;
     @PostMapping("/check")
-    public ResponseEntity<String> saveRequest(@RequestParam String partner) throws URISyntaxException {
-        hitRequestService.sendRequestAndSaveResponse(partner,"Createhotel");
+    public ResponseEntity<String> saveRequest(@RequestParam String impactService) throws URISyntaxException {
+        hitRequestService.sendRequestAndSaveResponse(impactService,"Createhotel");
         return ResponseEntity.ok("Request checked successfully");
     }
+
+    @PostMapping("/hit")
+    public ResponseEntity<String> hitReq(@RequestParam String impactService) throws URISyntaxException {
+        hitRequestService.hitTargetService(impactService);
+        return ResponseEntity.ok("Request checked successfully");
+    }
+
 }
