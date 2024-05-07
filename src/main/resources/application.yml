@@ -1,0 +1,58 @@
+spring:
+  jackson.serialization.write-dates-as-timestamps: false
+  application:
+    name:
+      monitor-error-prediction-service
+  cloud:
+    kubernetes:
+      reload.enabled: false
+      enabled: false
+      config.enabled: false
+      sources.enabled: false
+  autoconfigure:
+    exclude:
+      #  - org.springframework.boot.autoconfigure.data.mongo.MongoDataAutoConfiguration
+      - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
+      # - org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+      - org.springframework.boot.actuate.autoconfigure.security.servlet.ManagementWebSecurityAutoConfiguration
+      - org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
+
+exception:
+  util:
+    exception-advice:
+      enabled: true
+kubernetes:
+  disable:
+    autoConfig: true
+logging:
+  level:
+    root: INFO
+  ignore:
+    base-url:
+
+
+management:
+  service-code: EXDIGIBN000002
+  endpoints:
+    enabled-by-default: false
+    restart:
+      enabled: true
+    web:
+      base-path: /
+      path-mapping.health: ready
+      exposure.include: "*"
+      expose: "*"
+  endpoint:
+    health.enabled: true
+    info.enabled: true
+    prometheus.enabled: true
+    metrics.enabled: true
+config:
+  project-name: ${spring.application.name}
+  source: ${spring.application.name}
+  swagger:
+    base-package: "com.abfintech.moniter.engine.controller"
+    title: "Impact monitor"
+    description: "Impact monitor"
+    version: "1.0.0"
