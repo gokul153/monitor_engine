@@ -14,7 +14,7 @@ public class ResponseModelEntity {
     @Id
     private String id;
     private String requestId;
-    private String response;
+    private Object response;
     private String impactService;
     private String requestName;
     private String rootCause;
