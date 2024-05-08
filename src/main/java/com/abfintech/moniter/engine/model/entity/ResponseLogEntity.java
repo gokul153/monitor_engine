@@ -12,6 +12,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ResponseLogEntity {
-    private String response;
+    private Object response;
+    private String statusCode;
     private LocalDateTime timestamp;
 }

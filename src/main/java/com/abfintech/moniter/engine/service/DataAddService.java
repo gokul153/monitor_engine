@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.util.Objects;
 
 @Service
 public class DataAddService {
@@ -26,14 +27,16 @@ public class DataAddService {
         requestData.setTimestamp(LocalDateTime.now());
         requestData.setRequestId(RandomStringUtils.randomAlphanumeric(8));
         requestRepository.save(requestData);
-        request.getResponses().forEach(responseModelEntity -> {
-            ResponseModelEntity responseData = new ResponseModelEntity();
-            BeanUtils.copyProperties(responseModelEntity, responseData);
-            responseData.setRequestId(requestData.getRequestId());
-            responseData.setImpactService(requestData.getImpactService());
-            responseData.setRequestName(requestData.getRequestName());
-            responseModelRepository.save(responseData);
-        });
+        if (Objects.nonNull(request.getResponses())) {
+            request.getResponses().forEach(responseModelEntity -> {
+                ResponseModelEntity responseData = new ResponseModelEntity();
+                BeanUtils.copyProperties(responseModelEntity, responseData);
+                responseData.setRequestId(requestData.getRequestId());
+                responseData.setImpactService(requestData.getImpactService());
+                responseData.setRequestName(requestData.getRequestName());
+                responseModelRepository.save(responseData);
+            });
+        }
 
 
     }

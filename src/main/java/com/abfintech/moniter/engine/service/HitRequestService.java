@@ -6,7 +6,9 @@ import com.abfintech.moniter.engine.model.entity.RequestEntity;
 import com.abfintech.moniter.engine.repo.RequestRepository;
 import com.abfintech.moniter.engine.repo.ResponseModelRepository;
 import com.abfintech.moniter.engine.repo.ResponseStoreRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.net.URI;
@@ -15,6 +17,7 @@ import java.time.LocalDateTime;
 import java.util.*;
 
 @Service
+@Slf4j
 public class HitRequestService {
     @Autowired
     ResponseModelRepository responseModelRepository;
@@ -32,7 +35,7 @@ public class HitRequestService {
         if (requestEntityList != null) {
             for (RequestEntity requestEntity : requestEntityList) {
                 // Construct the request body, params, and headers
-                String requestBody = requestEntity.getRequestBody();
+//                String requestBody = requestEntity.getRequestBody();
                 Map<String, String> headers = requestEntity.getHeaders();
                 String url = "http://localhost:9191/crazyhotel/newentry";
                 // Send the request using Feign Client
@@ -66,14 +69,25 @@ public class HitRequestService {
                 switch (request.getRequestType()){
                     case POST:
                         try {
-                            remoteServiceClient.sendPostRequest(new URI(request.getUrl()), request.getRequestBody(), request.getHeaders(), request.getParams());
+                            ResponseEntity<Object> response = remoteServiceClient.sendPostRequest(new URI(request.getUrl()), request.getRequestBody(), request.getHeaders(), request.getParams());
+                            ResponseLogEntity responseLogEntity = new ResponseLogEntity();
+                            responseLogEntity.setResponse(response.getBody());
+                            responseLogEntity.setStatusCode(response.getStatusCode().getReasonPhrase());
+                            responseLogEntity.setTimestamp(LocalDateTime.now());
+
+                            responseStoreRepository.save(responseLogEntity);
                         } catch (URISyntaxException e) {
                             e.printStackTrace();
                         }
                         break;
                     case GET:
                         try {
-                            remoteServiceClient.sendGetRequest(new URI(request.getUrl()),  request.getHeaders(), request.getParams());
+                            ResponseEntity<Object> response = remoteServiceClient.sendGetRequest(new URI(request.getUrl()),  request.getHeaders(), request.getParams());
+                            ResponseLogEntity responseLogEntity = new ResponseLogEntity();
+                            responseLogEntity.setResponse(response.getBody());
+                            responseLogEntity.setStatusCode(response.getStatusCode().getReasonPhrase());
+                            responseLogEntity.setTimestamp(LocalDateTime.now());
+                            responseStoreRepository.save(responseLogEntity);
                         } catch (URISyntaxException e) {
                             e.printStackTrace();
                         }

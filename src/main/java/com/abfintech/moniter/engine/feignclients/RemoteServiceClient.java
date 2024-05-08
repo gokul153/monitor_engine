@@ -1,8 +1,8 @@
 package com.abfintech.moniter.engine.feignclients;
 
 
-import com.arabbank.marketplace.common.lib.feign.CustomMicroserviceConfig;
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.net.URI;
@@ -12,13 +12,13 @@ import java.util.Map;
 public interface  RemoteServiceClient {
 
     @PostMapping
-    String sendPostRequest(URI url, @RequestBody String requestBody, @RequestHeader Map<String, String> headers, @RequestParam Map<String, Object> params);
+    ResponseEntity<Object> sendPostRequest(URI url, @RequestBody Object requestBody, @RequestHeader Map<String, String> headers, @RequestParam Map<String, Object> params);
 
     @GetMapping
-    String sendGetRequest(URI url, @RequestHeader Map<String, String> headers, @RequestParam Map<String, Object> params);
+    ResponseEntity<Object> sendGetRequest(URI url, @RequestHeader Map<String, String> headers, @RequestParam Map<String, Object> params);
 
     @PutMapping
-    String sendPutRequest(URI url, @RequestBody String requestBody, @RequestHeader Map<String, String> headers, @RequestParam Map<String, Object> params);
+    String sendPutRequest(URI url, @RequestBody Object requestBody, @RequestHeader Map<String, String> headers, @RequestParam Map<String, Object> params);
 
     @DeleteMapping
     String sendDeleteRequest(URI url, @RequestHeader Map<String, String> headers, @RequestParam Map<String, Object> params);

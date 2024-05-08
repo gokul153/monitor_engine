@@ -10,7 +10,7 @@ import java.util.Map;
 @Data
 public class AddRequestDTO {
     private String parentService;
-    private String requestBody;
+    private Object requestBody;
     private String requestName;
     private String impactService;
     private String url;

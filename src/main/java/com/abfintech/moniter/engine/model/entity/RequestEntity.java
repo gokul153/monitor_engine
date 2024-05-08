@@ -19,7 +19,7 @@ public class RequestEntity {
     private String id;
     private String requestId;
     private String parentService;
-    private String requestBody;
+    private Object requestBody;
     private String requestName;
     private String impactService;
     private String url;
