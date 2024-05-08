@@ -6,7 +6,7 @@ import com.abfintech.moniter.engine.model.entity.RequestEntity;
 import com.abfintech.moniter.engine.repo.RequestRepository;
 import com.abfintech.moniter.engine.repo.ResponseModelRepository;
 import com.abfintech.moniter.engine.repo.ResponseStoreRepository;
-import lombok.extern.slf4j.Slf4j;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -17,7 +17,7 @@ import java.time.LocalDateTime;
 import java.util.*;
 
 @Service
-@Slf4j
+
 public class HitRequestService {
     @Autowired
     ResponseModelRepository responseModelRepository;
@@ -72,7 +72,7 @@ public class HitRequestService {
                             ResponseEntity<Object> response = remoteServiceClient.sendPostRequest(new URI(request.getUrl()), request.getRequestBody(), request.getHeaders(), request.getParams());
                             ResponseLogEntity responseLogEntity = new ResponseLogEntity();
                             responseLogEntity.setResponse(response.getBody());
-                            responseLogEntity.setStatusCode(response.getStatusCode().getReasonPhrase());
+//                            responseLogEntity.setStatusCode(response.getStatusCode());
                             responseLogEntity.setTimestamp(LocalDateTime.now());
 
                             responseStoreRepository.save(responseLogEntity);
@@ -85,7 +85,7 @@ public class HitRequestService {
                             ResponseEntity<Object> response = remoteServiceClient.sendGetRequest(new URI(request.getUrl()),  request.getHeaders(), request.getParams());
                             ResponseLogEntity responseLogEntity = new ResponseLogEntity();
                             responseLogEntity.setResponse(response.getBody());
-                            responseLogEntity.setStatusCode(response.getStatusCode().getReasonPhrase());
+//                            responseLogEntity.setStatusCode(response.getStatusCode().getReasonPhrase());
                             responseLogEntity.setTimestamp(LocalDateTime.now());
                             responseStoreRepository.save(responseLogEntity);
                         } catch (URISyntaxException e) {

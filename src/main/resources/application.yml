@@ -56,3 +56,9 @@ config:
     title: "Impact monitor"
     description: "Impact monitor"
     version: "1.0.0"
+
+feign:
+  client:
+    config:
+      default:
+        disableCaching: true

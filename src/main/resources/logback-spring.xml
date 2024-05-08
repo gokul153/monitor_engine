@@ -1,8 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-    <include resource="com/arabbank/core/service/logging/logback/ab-logback.xml"/>
+    <property name="FILE_LOG_PATTERN" value="%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"/>
 
-    <springProfile name="dev">
-        <include resource="com/arabbank/core/service/logging/logback/ab-dev-loggers.xml"/>
-    </springProfile>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <Pattern>%highlight(%d{HH:mm:ss.SSS}[%thread] %-5level %logger{36} - %msg%n){ERROR=red}%n</Pattern>
+        </encoder>
+    </appender>
+
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <encoder>
+            <Pattern>%highlight(%d{HH:mm:ss.SSS}[%thread] %-5level %logger{36} - %msg%n){ERROR=red}%n</Pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_FILE}.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+    </appender>
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="FILE" />
+    </root>
 </configuration>
