@@ -8,6 +8,7 @@ import com.abfintech.moniter.engine.model.DTO.NotificationDTO;
 import com.abfintech.moniter.engine.model.entity.ResponseLogEntity;
 import com.abfintech.moniter.engine.model.entity.RequestEntity;
 import com.abfintech.moniter.engine.model.enums.ResponseType;
+import com.abfintech.moniter.engine.model.response.HitReqResponse;
 import com.abfintech.moniter.engine.repo.RequestRepository;
 import com.abfintech.moniter.engine.repo.ResponseModelRepository;
 import com.abfintech.moniter.engine.repo.ResponseStoreRepository;
@@ -71,10 +72,11 @@ public class HitRequestService {
         }
     }
 
-    public List<ResponseLogEntity> hitTargetService(String impactService) {
+    public HitReqResponse hitTargetService(String impactService) {
 
         List<RequestEntity> requestEntityList = requestRepository.findByImpactService(impactService);
         List<ResponseLogEntity> responses = new ArrayList<>();
+        HitReqResponse hitReqResponse = new HitReqResponse();
         if (!requestEntityList.isEmpty()) {
             String triggerReference = impactService + "-" + RandomStringUtils.randomAlphanumeric(8);
             requestEntityList.forEach(request -> {
@@ -86,7 +88,7 @@ public class HitRequestService {
                     case POST:
 
                         try {
-                            response = remoteServiceClient.sendPostRequest(new URI(request.getUrl()), request.getRequestBody(), request.getHeaders(), request.getParams());
+                            response = remoteServiceClient.getDate("3");
                             responseLogEntity.setResponse(response.getBody());
                             responseLogEntity.setTimestamp(LocalDateTime.now());
                             responseLogEntity.setResponseType(ResponseType.SUCCESS);
@@ -102,7 +104,7 @@ public class HitRequestService {
                         break;
                     case GET:
                         try {
-                            response = remoteServiceClient.sendGetRequest(new URI(request.getUrl()), request.getHeaders(), request.getParams());
+                            response = remoteServiceClient.getAppointments();
                             responseLogEntity.setResponse(response.getBody());
                             responseLogEntity.setTimestamp(LocalDateTime.now());
                             responseLogEntity.setResponseType(ResponseType.SUCCESS);
@@ -151,16 +153,22 @@ public class HitRequestService {
                 responseStoreRepository.save(responseLogEntity);
             });
             List<ResponseLogEntity> responseLogEntities = responseStoreRepository.findByResponseTypeAndTriggerReference(ResponseType.FAILURE, triggerReference);
-            NotificationDTO notificationDTO = new NotificationDTO();
-            notificationDTO.setServiceName(impactService);
-            notificationDTO.setEmail(requestEntityList.get(0).getEmail());
-            notificationDTO.setTime(LocalDateTime.now());
-            notificationDTO.setResponses(responseLogEntities);
-            emailNotificationConsumer.receiveNotification(notificationDTO);
             responses = responseStoreRepository.findByTriggerReference(triggerReference);
-        }
+            hitReqResponse.setResponses(responses);
+            double c1 = (Double.valueOf(responses.size())-Double.valueOf(responseLogEntities.size())) / Double.valueOf(responses.size());
+            hitReqResponse.setPercentage(c1*100);
+            if(!responseLogEntities.isEmpty()) {
+                NotificationDTO notificationDTO = new NotificationDTO();
+                notificationDTO.setServiceName(impactService);
+                notificationDTO.setEmail(requestEntityList.get(0).getEmail());
+                notificationDTO.setTime(LocalDateTime.now());
+                notificationDTO.setResponses(responseLogEntities);
+                emailNotificationConsumer.receiveNotification(notificationDTO);
+            }
 
-        return responses;
+        }
+        return hitReqResponse;
+
     }
 
 
