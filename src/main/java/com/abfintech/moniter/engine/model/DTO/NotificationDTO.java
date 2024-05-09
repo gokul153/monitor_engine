@@ -1,13 +1,15 @@
 package com.abfintech.moniter.engine.model.DTO;
 
+import com.abfintech.moniter.engine.model.entity.ResponseLogEntity;
 import lombok.Data;
+
+import java.time.LocalDateTime;
+import java.util.List;
 
 @Data
 public class NotificationDTO  {
-    String eventName;
-    String eventDate;
-    int numberOfTickets;
-    String bookingId;
-    private String nameOfBooker;
-    private String emailId;
+    String serviceName;
+    LocalDateTime time;
+    String email;
+    List<ResponseLogEntity> responses;
 }

@@ -27,4 +27,5 @@ public class RequestEntity {
     private Map<String,Object>  params;
     private Map<String,String>  headers;
     private RequestTypeEnum requestType;
+    private String email;
 }

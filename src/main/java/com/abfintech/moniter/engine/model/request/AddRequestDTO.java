@@ -18,4 +18,5 @@ public class AddRequestDTO {
     Map<String,String>  headers;
     private RequestTypeEnum requestType;
     List<ResponseModelEntity> responses;
+    private String email;
 }

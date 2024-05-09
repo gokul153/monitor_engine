@@ -1,11 +1,13 @@
 package com.abfintech.moniter.engine.controller;
 
+import com.abfintech.moniter.engine.model.entity.ResponseLogEntity;
 import com.abfintech.moniter.engine.service.HitRequestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.net.URISyntaxException;
+import java.util.List;
 
 @RestController
 @RequestMapping("/hitrequest")
@@ -19,9 +21,9 @@ public class CheckPartnerRequestController {
     }
 
     @PostMapping("/hit")
-    public ResponseEntity<String> hitReq(@RequestParam String impactService) throws URISyntaxException {
-        hitRequestService.hitTargetService(impactService);
-        return ResponseEntity.ok("Request checked successfully");
+    public List<ResponseLogEntity> hitReq(@RequestParam String impactService) throws URISyntaxException {
+        return hitRequestService.hitTargetService(impactService);
+//        return ResponseEntity.ok("Request checked successfully");
     }
 
 }

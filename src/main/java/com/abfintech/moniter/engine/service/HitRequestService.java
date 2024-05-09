@@ -1,14 +1,18 @@
 package com.abfintech.moniter.engine.service;
 
 //import com.abfintech.moniter.engine.feignclients.RemoteServiceClient;
+
 import com.abfintech.moniter.engine.feignclients.BestHotelFeignCLoud;
 import com.abfintech.moniter.engine.feignclients.RemoteServiceClient;
+import com.abfintech.moniter.engine.model.DTO.NotificationDTO;
 import com.abfintech.moniter.engine.model.entity.ResponseLogEntity;
 import com.abfintech.moniter.engine.model.entity.RequestEntity;
+import com.abfintech.moniter.engine.model.enums.ResponseType;
 import com.abfintech.moniter.engine.repo.RequestRepository;
 import com.abfintech.moniter.engine.repo.ResponseModelRepository;
 import com.abfintech.moniter.engine.repo.ResponseStoreRepository;
 
+import org.apache.commons.lang3.RandomStringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -31,6 +35,8 @@ public class HitRequestService {
     BestHotelFeignCLoud bestHotelFeignCLoud;
     @Autowired
     private RemoteServiceClient remoteServiceClient;
+    @Autowired
+    private EmailNotificationConsumer emailNotificationConsumer;
 
     public void sendRequestAndSaveResponse(String partner, String requestname) throws URISyntaxException {
         String response = null;
@@ -65,56 +71,96 @@ public class HitRequestService {
         }
     }
 
-    public Void hitTargetService(String impactService) {
+    public List<ResponseLogEntity> hitTargetService(String impactService) {
 
         List<RequestEntity> requestEntityList = requestRepository.findByImpactService(impactService);
+        List<ResponseLogEntity> responses = new ArrayList<>();
         if (!requestEntityList.isEmpty()) {
-            requestEntityList.forEach(request ->{
-                switch (request.getRequestType()){
+            String triggerReference = impactService + "-" + RandomStringUtils.randomAlphanumeric(8);
+            requestEntityList.forEach(request -> {
+                ResponseLogEntity responseLogEntity = new ResponseLogEntity();
+                responseLogEntity.setTriggerReference(triggerReference);
+                responseLogEntity.setRequestName(request.getRequestName());
+                ResponseEntity<Object> response = null;
+                switch (request.getRequestType()) {
                     case POST:
-                        ResponseEntity<Object> response = null;
+
                         try {
                             response = remoteServiceClient.sendPostRequest(new URI(request.getUrl()), request.getRequestBody(), request.getHeaders(), request.getParams());
-                        } catch (URISyntaxException e) {
+                            responseLogEntity.setResponse(response.getBody());
+                            responseLogEntity.setTimestamp(LocalDateTime.now());
+                            responseLogEntity.setResponseType(ResponseType.SUCCESS);
+                            responseLogEntity.setTriggerReference(triggerReference);
+                        } catch (Exception e) {
+                            responseLogEntity.setResponse(e.getMessage());
+                            responseLogEntity.setTimestamp(LocalDateTime.now());
+                            responseLogEntity.setResponseType(ResponseType.FAILURE);
+                            responseLogEntity.setTriggerReference(triggerReference);
                             e.printStackTrace();
                         }
-                        ResponseLogEntity responseLogEntity = new ResponseLogEntity();
-                        responseLogEntity.setResponse(response.getBody());
-                     //   responseLogEntity.setStatusCode(response.getStatusCode());
-                        responseLogEntity.setTimestamp(LocalDateTime.now());
 
-                        responseStoreRepository.save(responseLogEntity);
                         break;
                     case GET:
                         try {
-                            ResponseEntity<Object> response1 = remoteServiceClient.sendGetRequest(new URI(request.getUrl()),  request.getHeaders(), request.getParams());
-                            ResponseLogEntity responseLogEntity1 = new ResponseLogEntity();
-                            responseLogEntity1.setResponse(response1.getBody());
-//                            responseLogEntity.setStatusCode(response.getStatusCode().getReasonPhrase());
-                            responseLogEntity1.setTimestamp(LocalDateTime.now());
-                            responseStoreRepository.save(responseLogEntity1);
-                        } catch (URISyntaxException e) {
+                            response = remoteServiceClient.sendGetRequest(new URI(request.getUrl()), request.getHeaders(), request.getParams());
+                            responseLogEntity.setResponse(response.getBody());
+                            responseLogEntity.setTimestamp(LocalDateTime.now());
+                            responseLogEntity.setResponseType(ResponseType.SUCCESS);
+                            responseLogEntity.setTriggerReference(triggerReference);
+                        } catch (Exception e) {
+                            responseLogEntity.setResponse(e.getMessage());
+                            responseLogEntity.setTimestamp(LocalDateTime.now());
+                            responseLogEntity.setResponseType(ResponseType.FAILURE);
+                            responseLogEntity.setTriggerReference(triggerReference);
                             e.printStackTrace();
                         }
                         break;
                     case PUT:
                         try {
-                            remoteServiceClient.sendPutRequest(new URI(request.getUrl()), request.getRequestBody(),  request.getHeaders(), request.getParams());
-                        } catch (URISyntaxException e) {
+                            remoteServiceClient.sendPutRequest(new URI(request.getUrl()), request.getRequestBody(), request.getHeaders(), request.getParams());
+                            responseLogEntity.setResponse(response.getBody());
+                            responseLogEntity.setTimestamp(LocalDateTime.now());
+                            responseLogEntity.setResponseType(ResponseType.SUCCESS);
+                            responseLogEntity.setTriggerReference(triggerReference);
+                        } catch (Exception e) {
+
+                            responseLogEntity.setResponse(e.getMessage());
+                            responseLogEntity.setTimestamp(LocalDateTime.now());
+                            responseLogEntity.setResponseType(ResponseType.FAILURE);
+                            responseLogEntity.setTriggerReference(triggerReference);
                             e.printStackTrace();
                         }
                         break;
                     case DELETE:
                         try {
                             remoteServiceClient.sendDeleteRequest(new URI(request.getUrl()), request.getHeaders(), request.getParams());
-                        } catch (URISyntaxException e) {
+                            responseLogEntity.setResponse(response.getBody());
+                            responseLogEntity.setTimestamp(LocalDateTime.now());
+                            responseLogEntity.setResponseType(ResponseType.SUCCESS);
+                            responseLogEntity.setTriggerReference(triggerReference);
+                        } catch (Exception e) {
+
+                            responseLogEntity.setResponse(e.getMessage());
+                            responseLogEntity.setTimestamp(LocalDateTime.now());
+                            responseLogEntity.setResponseType(ResponseType.FAILURE);
+                            responseLogEntity.setTriggerReference(triggerReference);
                             e.printStackTrace();
                         }
                         break;
                 }
+                responseStoreRepository.save(responseLogEntity);
             });
+            List<ResponseLogEntity> responseLogEntities = responseStoreRepository.findByResponseTypeAndTriggerReference(ResponseType.FAILURE, triggerReference);
+            NotificationDTO notificationDTO = new NotificationDTO();
+            notificationDTO.setServiceName(impactService);
+            notificationDTO.setEmail(requestEntityList.get(0).getEmail());
+            notificationDTO.setTime(LocalDateTime.now());
+            notificationDTO.setResponses(responseLogEntities);
+            emailNotificationConsumer.receiveNotification(notificationDTO);
+            responses = responseStoreRepository.findByTriggerReference(triggerReference);
         }
-        return null;
+
+        return responses;
     }
 
 
