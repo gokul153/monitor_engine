@@ -3,6 +3,11 @@ package com.abfintech.moniter.engine.service;
 import com.abfintech.moniter.engine.model.DTO.NotificationDTO;
 import com.abfintech.moniter.engine.model.entity.ResponseLogEntity;
 import com.abfintech.moniter.engine.model.entity.ResponseModelEntity;
+import com.itextpdf.kernel.pdf.PdfDocument;
+import com.itextpdf.kernel.pdf.PdfWriter;
+import com.itextpdf.layout.Document;
+import com.itextpdf.layout.element.Paragraph;
+import com.itextpdf.layout.properties.TextAlignment;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.PDPageContentStream;
@@ -50,7 +55,7 @@ public class EmailNotificationConsumer {
                             "\n\t\tService Name: " + notification.getServiceName() +
                             "\n\t\tRequest time: " + notification.getTime());
 
-            pdfGenerator(notification.getServiceName(), notification.getResponses(), outputStream);
+            generatePDF(notification.getServiceName(), notification.getResponses(), outputStream);
             ByteArrayResource pdfAttachment = new ByteArrayResource(outputStream.toByteArray());
             helper.addAttachment("Impact Monitor Report " + LocalDateTime.now()+".pdf", pdfAttachment);
             emailSender.send(message);
@@ -140,6 +145,42 @@ public class EmailNotificationConsumer {
             }
         }
         return lines;
+    }
+    public static void generatePDF(String serviceName,  List<ResponseLogEntity> responses, ByteArrayOutputStream outputStream) {
+        try (PdfWriter writer = new PdfWriter(outputStream);
+             PdfDocument pdf = new PdfDocument(writer);
+             Document document = new Document(pdf)) {
+
+            // Add heading
+            Paragraph heading = new Paragraph("Impact Monitor Report")
+                    .setTextAlignment(TextAlignment.CENTER)
+                    .setFontSize(20);
+            document.add(heading);
+
+            // Add service name
+            Paragraph serviceNameParagraph = new Paragraph("Service Name: " + serviceName)
+                    .setFontSize(18);
+            document.add(serviceNameParagraph);
+            responses.forEach(responseLogEntity -> {
+                Paragraph lineSep = new Paragraph("____________________________________________________")
+                        .setFontSize(14);
+                document.add(lineSep);
+
+                Paragraph requestNameParagraph = new Paragraph("Request Name: " + responseLogEntity.getRequestName())
+                        .setFontSize(14);
+                document.add(requestNameParagraph);
+
+                // Add error details
+                Paragraph errorDetailsParagraph = new Paragraph("Error Details:\n" + responseLogEntity.getResponse())
+                        .setFontSize(14);
+                document.add(errorDetailsParagraph);
+            });
+            // Add request name
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }

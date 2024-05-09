@@ -1647,3 +1647,2152 @@ java.lang.NullPointerException: Cannot invoke "String.length()" because "s" is n
 [0;39m
 [34m16:38:22.396[http-nio-8080-exec-1] INFO  c.n.l.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client localhost initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=localhost,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:com.netflix.loadbalancer.ConfigurationBasedServerList@3deac67f
 [0;39m
+[34m16:56:16.361[Thread-6] INFO  c.n.l.PollingServerListUpdater - Shutting down the Executor Pool for PollingServerListUpdater
+[0;39m
+[34m16:56:16.398[SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[0;39m
+[34m16:56:16.413[SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:3694}] to localhost:27017 because the pool has been closed.
+[0;39m
+[34m16:57:43.378[background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+[0;39m
+[34m16:57:44.044[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - The following profiles are active: dev
+[0;39m
+[34m16:57:45.871[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m16:57:46.031[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 156ms. Found 3 MongoDB repository interfaces.
+[0;39m
+[34m16:57:46.289[main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=be5c81a9-f5c0-3a40-bb62-b2d8f8e9f8c5
+[0;39m
+[34m16:57:46.668[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m16:57:46.677[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m16:57:46.677[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m16:57:46.677[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+[0;39m
+[34m16:57:46.954[main] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m16:57:46.954[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2890 ms
+[0;39m
+[34m16:57:47.129[main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[0;39m
+[34m16:57:47.255[cluster-ClusterId{value='663cb333c7fa092e576ad165', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3697}] to localhost:27017
+[0;39m
+[34m16:57:47.287[cluster-ClusterId{value='663cb333c7fa092e576ad165', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=21430700}
+[0;39m
+[31m16:57:48.553[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m16:57:48.553[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[31m16:57:48.558[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m16:57:48.558[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[34m16:57:48.732[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[0;39m
+[31m16:57:49.129[main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[0;39m
+[34m16:57:49.251[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m16:57:49.298[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/impactmoniter'
+[0;39m
+[34m16:57:49.738[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - Started MonitorErrorPredictionServiceApplication in 7.079 seconds (JVM running for 7.914)
+[0;39m
+[34m16:59:07.990[http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m
+[34m16:59:07.990[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[0;39m
+[34m16:59:07.995[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+[0;39m
+[34m16:59:08.074[http-nio-8080-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:3698}] to localhost:27017
+[0;39m
+[34m17:02:17.022[SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[0;39m
+[34m17:02:17.032[SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:3698}] to localhost:27017 because the pool has been closed.
+[0;39m
+[34m17:02:24.026[background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+[0;39m
+[34m17:02:24.543[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - The following profiles are active: dev
+[0;39m
+[34m17:02:25.476[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m17:02:25.604[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 125ms. Found 3 MongoDB repository interfaces.
+[0;39m
+[34m17:02:25.836[main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=be5c81a9-f5c0-3a40-bb62-b2d8f8e9f8c5
+[0;39m
+[34m17:02:26.161[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m17:02:26.171[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m17:02:26.171[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m17:02:26.171[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+[0;39m
+[34m17:02:26.401[main] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m17:02:26.402[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1838 ms
+[0;39m
+[34m17:02:26.550[main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[0;39m
+[34m17:02:26.664[cluster-ClusterId{value='663cb44a0670e86e95361e58', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3702}] to localhost:27017
+[0;39m
+[34m17:02:26.670[cluster-ClusterId{value='663cb44a0670e86e95361e58', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3908200}
+[0;39m
+[31m17:02:27.947[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m17:02:27.947[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[31m17:02:27.962[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m17:02:27.963[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[34m17:02:28.174[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[0;39m
+[31m17:02:28.496[main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[0;39m
+[34m17:02:28.617[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m17:02:28.666[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/impactmoniter'
+[0;39m
+[34m17:02:29.131[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - Started MonitorErrorPredictionServiceApplication in 5.603 seconds (JVM running for 6.369)
+[0;39m
+[34m17:03:05.163[http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m
+[34m17:03:05.163[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[0;39m
+[34m17:03:05.170[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+[0;39m
+[34m17:03:05.260[http-nio-8080-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:3703}] to localhost:27017
+[0;39m
+[34m17:14:43.819[SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[0;39m
+[34m17:14:43.829[SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:3703}] to localhost:27017 because the pool has been closed.
+[0;39m
+[34m17:14:48.650[background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+[0;39m
+[34m17:14:49.186[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - The following profiles are active: dev
+[0;39m
+[34m17:14:50.729[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m17:14:50.875[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 141ms. Found 3 MongoDB repository interfaces.
+[0;39m
+[34m17:14:51.106[main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=be5c81a9-f5c0-3a40-bb62-b2d8f8e9f8c5
+[0;39m
+[34m17:14:51.532[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m17:14:51.544[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m17:14:51.545[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m17:14:51.545[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+[0;39m
+[34m17:14:51.860[main] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m17:14:51.860[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2657 ms
+[0;39m
+[34m17:14:52.054[main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[0;39m
+[34m17:14:52.170[cluster-ClusterId{value='663cb734d7f44076a71a9357', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3709}] to localhost:27017
+[0;39m
+[34m17:14:52.187[cluster-ClusterId{value='663cb734d7f44076a71a9357', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=16292100}
+[0;39m
+[31m17:14:53.450[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m17:14:53.450[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[31m17:14:53.459[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m17:14:53.460[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[34m17:14:53.813[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[0;39m
+[31m17:14:54.364[main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[0;39m
+[34m17:14:54.528[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m17:14:54.623[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/impactmoniter'
+[0;39m
+[34m17:14:55.013[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - Started MonitorErrorPredictionServiceApplication in 6.877 seconds (JVM running for 7.656)
+[0;39m
+[34m17:16:01.378[SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[0;39m
+[34m17:16:06.276[background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+[0;39m
+[34m17:16:06.831[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - The following profiles are active: dev
+[0;39m
+[34m17:16:08.298[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m17:16:08.420[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 120ms. Found 3 MongoDB repository interfaces.
+[0;39m
+[34m17:16:08.640[main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=be5c81a9-f5c0-3a40-bb62-b2d8f8e9f8c5
+[0;39m
+[34m17:16:08.962[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m17:16:08.972[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m17:16:08.972[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m17:16:08.973[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+[0;39m
+[34m17:16:09.194[main] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m17:16:09.195[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2345 ms
+[0;39m
+[34m17:16:09.351[main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[0;39m
+[34m17:16:09.458[cluster-ClusterId{value='663cb781fcec096a9e6b58db', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3710}] to localhost:27017
+[0;39m
+[34m17:16:09.465[cluster-ClusterId{value='663cb781fcec096a9e6b58db', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4635100}
+[0;39m
+[31m17:16:10.612[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m17:16:10.612[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[31m17:16:10.619[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m17:16:10.619[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[34m17:16:10.759[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[0;39m
+[31m17:16:11.073[main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[0;39m
+[34m17:16:11.177[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m17:16:11.229[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/impactmoniter'
+[0;39m
+[34m17:16:11.688[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - Started MonitorErrorPredictionServiceApplication in 5.911 seconds (JVM running for 6.696)
+[0;39m
+[34m17:16:16.044[http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m
+[34m17:16:16.044[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[0;39m
+[34m17:16:16.050[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+[0;39m
+[34m17:16:16.133[http-nio-8080-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:3711}] to localhost:27017
+[0;39m
+[34m17:16:36.884[SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[0;39m
+[34m17:16:36.901[SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:3711}] to localhost:27017 because the pool has been closed.
+[0;39m
+[34m17:16:41.784[background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+[0;39m
+[34m17:16:42.432[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - The following profiles are active: dev
+[0;39m
+[34m17:16:43.394[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m17:16:43.519[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 122ms. Found 3 MongoDB repository interfaces.
+[0;39m
+[34m17:16:43.765[main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=be5c81a9-f5c0-3a40-bb62-b2d8f8e9f8c5
+[0;39m
+[34m17:16:44.095[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m17:16:44.102[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m17:16:44.103[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m17:16:44.103[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+[0;39m
+[34m17:16:44.317[main] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m17:16:44.317[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1865 ms
+[0;39m
+[34m17:16:44.489[main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[0;39m
+[34m17:16:44.586[cluster-ClusterId{value='663cb7a405e3d92b1f1ecb12', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3713}] to localhost:27017
+[0;39m
+[34m17:16:44.595[cluster-ClusterId{value='663cb7a405e3d92b1f1ecb12', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4267600}
+[0;39m
+[31m17:16:45.648[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m17:16:45.648[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[31m17:16:45.652[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m17:16:45.652[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[34m17:16:45.786[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[0;39m
+[31m17:16:46.074[main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[0;39m
+[34m17:16:46.189[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m17:16:46.233[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/impactmoniter'
+[0;39m
+[34m17:16:46.689[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - Started MonitorErrorPredictionServiceApplication in 5.437 seconds (JVM running for 6.195)
+[0;39m
+[34m17:16:52.200[http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m
+[34m17:16:52.200[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[0;39m
+[34m17:16:52.205[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+[0;39m
+[34m17:16:52.277[http-nio-8080-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:3714}] to localhost:27017
+[0;39m
+[34m17:20:31.910[SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[0;39m
+[34m17:20:31.928[SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:3714}] to localhost:27017 because the pool has been closed.
+[0;39m
+[34m17:20:37.082[background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+[0;39m
+[34m17:20:37.763[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - The following profiles are active: dev
+[0;39m
+[34m17:20:39.279[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m17:20:39.416[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 134ms. Found 3 MongoDB repository interfaces.
+[0;39m
+[34m17:20:39.638[main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=be5c81a9-f5c0-3a40-bb62-b2d8f8e9f8c5
+[0;39m
+[34m17:20:39.946[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m17:20:39.954[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m17:20:39.954[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m17:20:39.955[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+[0;39m
+[34m17:20:40.165[main] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m17:20:40.166[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2381 ms
+[0;39m
+[34m17:20:40.344[main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[0;39m
+[34m17:20:40.450[cluster-ClusterId{value='663cb8902c23ab20c667bfce', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3715}] to localhost:27017
+[0;39m
+[34m17:20:40.461[cluster-ClusterId{value='663cb8902c23ab20c667bfce', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3179700}
+[0;39m
+[31m17:20:41.945[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m17:20:41.945[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[31m17:20:41.951[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m17:20:41.952[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[34m17:20:42.184[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[0;39m
+[31m17:20:42.557[main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[0;39m
+[34m17:20:42.740[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m17:20:42.810[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/impactmoniter'
+[0;39m
+[34m17:20:43.355[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - Started MonitorErrorPredictionServiceApplication in 6.843 seconds (JVM running for 7.733)
+[0;39m
+[34m17:20:48.368[http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m
+[34m17:20:48.369[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[0;39m
+[34m17:20:48.377[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+[0;39m
+[34m17:20:48.463[http-nio-8080-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:3716}] to localhost:27017
+[0;39m
+[34m17:22:06.154[SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[0;39m
+[34m17:22:06.166[SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:3716}] to localhost:27017 because the pool has been closed.
+[0;39m
+[34m17:22:11.352[background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+[0;39m
+[34m17:22:12.050[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - The following profiles are active: dev
+[0;39m
+[34m17:22:15.886[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m17:22:16.023[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 133ms. Found 3 MongoDB repository interfaces.
+[0;39m
+[34m17:22:16.252[main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=be5c81a9-f5c0-3a40-bb62-b2d8f8e9f8c5
+[0;39m
+[34m17:22:16.603[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m17:22:16.611[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m17:22:16.611[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m17:22:16.611[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+[0;39m
+[34m17:22:16.846[main] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m17:22:16.846[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4775 ms
+[0;39m
+[34m17:22:17.107[main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[0;39m
+[34m17:22:17.212[cluster-ClusterId{value='663cb8f12aea6d6c40c0d632', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3717}] to localhost:27017
+[0;39m
+[34m17:22:17.227[cluster-ClusterId{value='663cb8f12aea6d6c40c0d632', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=8719700}
+[0;39m
+[31m17:22:18.412[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m17:22:18.412[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[31m17:22:18.422[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m17:22:18.423[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[34m17:22:18.558[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[0;39m
+[31m17:22:18.888[main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[0;39m
+[34m17:22:18.992[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m17:22:19.048[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/impactmoniter'
+[0;39m
+[34m17:22:19.492[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - Started MonitorErrorPredictionServiceApplication in 8.81 seconds (JVM running for 9.619)
+[0;39m
+[34m17:22:25.890[http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m
+[34m17:22:25.890[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[0;39m
+[34m17:22:25.894[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+[0;39m
+[34m17:22:25.985[http-nio-8080-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:3718}] to localhost:27017
+[0;39m
+[34m17:29:19.466[SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[0;39m
+[34m17:29:19.473[SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:3718}] to localhost:27017 because the pool has been closed.
+[0;39m
+[34m17:29:24.925[background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+[0;39m
+[34m17:29:25.486[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - The following profiles are active: dev
+[0;39m
+[34m17:29:27.025[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m17:29:27.175[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 147ms. Found 3 MongoDB repository interfaces.
+[0;39m
+[34m17:29:27.400[main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=be5c81a9-f5c0-3a40-bb62-b2d8f8e9f8c5
+[0;39m
+[34m17:29:27.717[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m17:29:27.726[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m17:29:27.727[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m17:29:27.727[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+[0;39m
+[34m17:29:27.964[main] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m17:29:27.964[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2460 ms
+[0;39m
+[34m17:29:28.109[main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[0;39m
+[34m17:29:28.246[cluster-ClusterId{value='663cbaa0cd383c1505a87747', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3719}] to localhost:27017
+[0;39m
+[34m17:29:28.264[cluster-ClusterId{value='663cbaa0cd383c1505a87747', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=10931200}
+[0;39m
+[31m17:29:29.978[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m17:29:29.979[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[31m17:29:29.992[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m17:29:29.993[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[34m17:29:30.163[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[0;39m
+[31m17:29:30.581[main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[0;39m
+[34m17:29:30.715[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m17:29:30.773[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/impactmoniter'
+[0;39m
+[34m17:29:31.352[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - Started MonitorErrorPredictionServiceApplication in 6.947 seconds (JVM running for 7.72)
+[0;39m
+[34m17:29:39.411[http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m
+[34m17:29:39.411[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[0;39m
+[34m17:29:39.416[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+[0;39m
+[34m17:29:39.491[http-nio-8080-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:3720}] to localhost:27017
+[0;39m
+[31m17:29:39.833[http-nio-8080-exec-1] WARN  o.a.p.pdmodel.PDPageContentStream - You did not call endText(), some viewers won't display your text
+[0;39m
+[1;31m17:29:39.839[http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/impactmoniter] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Error: Nested beginText() calls are not allowed.] with root cause
+[0;39m
+java.lang.IllegalStateException: Error: Nested beginText() calls are not allowed.
+	at org.apache.pdfbox.pdmodel.PDPageContentStream.beginText(PDPageContentStream.java:368)
+	at com.abfintech.moniter.engine.service.EmailNotificationConsumer.drawText(EmailNotificationConsumer.java:122)
+	at com.abfintech.moniter.engine.service.EmailNotificationConsumer.lambda$pdfGenerator$1(EmailNotificationConsumer.java:103)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.abfintech.moniter.engine.service.EmailNotificationConsumer.pdfGenerator(EmailNotificationConsumer.java:93)
+	at com.abfintech.moniter.engine.service.EmailNotificationConsumer.receiveNotification(EmailNotificationConsumer.java:50)
+	at com.abfintech.moniter.engine.service.HitRequestService.hitTargetService(HitRequestService.java:160)
+	at com.abfintech.moniter.engine.controller.CheckPartnerRequestController.hitReq(CheckPartnerRequestController.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[34m17:38:29.335[SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[0;39m
+[34m17:38:29.341[SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:3720}] to localhost:27017 because the pool has been closed.
+[0;39m
+[34m17:38:35.424[background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+[0;39m
+[34m17:38:36.088[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - The following profiles are active: dev
+[0;39m
+[34m17:38:38.699[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m17:38:38.834[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 132ms. Found 3 MongoDB repository interfaces.
+[0;39m
+[34m17:38:39.072[main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=be5c81a9-f5c0-3a40-bb62-b2d8f8e9f8c5
+[0;39m
+[34m17:38:39.392[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m17:38:39.402[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m17:38:39.403[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m17:38:39.403[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+[0;39m
+[34m17:38:39.621[main] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m17:38:39.621[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3509 ms
+[0;39m
+[34m17:38:39.802[main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[0;39m
+[34m17:38:39.928[cluster-ClusterId{value='663cbcc755fb316dc4d97900', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3721}] to localhost:27017
+[0;39m
+[34m17:38:39.942[cluster-ClusterId{value='663cbcc755fb316dc4d97900', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=10319900}
+[0;39m
+[31m17:38:41.534[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m17:38:41.534[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[31m17:38:41.547[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m17:38:41.547[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[34m17:38:41.771[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[0;39m
+[31m17:38:42.133[main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[0;39m
+[34m17:38:42.289[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m17:38:42.344[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/impactmoniter'
+[0;39m
+[34m17:38:42.886[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - Started MonitorErrorPredictionServiceApplication in 8.044 seconds (JVM running for 8.842)
+[0;39m
+[34m17:39:01.528[http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m
+[34m17:39:01.528[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[0;39m
+[34m17:39:01.533[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+[0;39m
+[34m17:39:01.596[http-nio-8080-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:3722}] to localhost:27017
+[0;39m
+[34m17:40:21.488[SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[0;39m
+[34m17:40:21.502[SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:3722}] to localhost:27017 because the pool has been closed.
+[0;39m
+[34m17:40:26.353[background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+[0;39m
+[34m17:40:26.888[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - The following profiles are active: dev
+[0;39m
+[34m17:40:28.498[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m17:40:28.658[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 156ms. Found 3 MongoDB repository interfaces.
+[0;39m
+[34m17:40:28.900[main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=be5c81a9-f5c0-3a40-bb62-b2d8f8e9f8c5
+[0;39m
+[34m17:40:29.253[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m17:40:29.264[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m17:40:29.264[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m17:40:29.264[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+[0;39m
+[34m17:40:29.514[main] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m17:40:29.514[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2607 ms
+[0;39m
+[34m17:40:29.765[main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[0;39m
+[34m17:40:29.950[cluster-ClusterId{value='663cbd3514b7e464a7e06f1f', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3723}] to localhost:27017
+[0;39m
+[34m17:40:29.970[cluster-ClusterId{value='663cbd3514b7e464a7e06f1f', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=16159800}
+[0;39m
+[31m17:40:31.625[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m17:40:31.626[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[31m17:40:31.651[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m17:40:31.651[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[34m17:40:31.879[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[0;39m
+[31m17:40:32.262[main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[0;39m
+[34m17:40:32.423[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m17:40:32.489[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/impactmoniter'
+[0;39m
+[34m17:40:33.041[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - Started MonitorErrorPredictionServiceApplication in 7.197 seconds (JVM running for 7.99)
+[0;39m
+[34m17:41:12.362[http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m
+[34m17:41:12.362[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[0;39m
+[34m17:41:12.367[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+[0;39m
+[34m17:41:12.479[http-nio-8080-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:3724}] to localhost:27017
+[0;39m
+[34m17:44:02.899[SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[0;39m
+[34m17:44:02.917[SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:3724}] to localhost:27017 because the pool has been closed.
+[0;39m
+[34m17:44:10.112[background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+[0;39m
+[34m17:44:10.663[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - The following profiles are active: dev
+[0;39m
+[34m17:44:11.621[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m17:44:11.768[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 141ms. Found 3 MongoDB repository interfaces.
+[0;39m
+[34m17:44:11.998[main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=be5c81a9-f5c0-3a40-bb62-b2d8f8e9f8c5
+[0;39m
+[34m17:44:12.312[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m17:44:12.322[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m17:44:12.323[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m17:44:12.323[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+[0;39m
+[34m17:44:12.533[main] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m17:44:12.533[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1854 ms
+[0;39m
+[34m17:44:12.684[main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[0;39m
+[34m17:44:12.776[cluster-ClusterId{value='663cbe14442e94331b79284e', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3725}] to localhost:27017
+[0;39m
+[34m17:44:12.786[cluster-ClusterId{value='663cbe14442e94331b79284e', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=5029200}
+[0;39m
+[31m17:44:14.184[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m17:44:14.184[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[31m17:44:14.190[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m17:44:14.190[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[34m17:44:14.352[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[0;39m
+[31m17:44:14.646[main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[0;39m
+[34m17:44:14.776[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m17:44:14.833[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/impactmoniter'
+[0;39m
+[34m17:44:15.369[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - Started MonitorErrorPredictionServiceApplication in 5.764 seconds (JVM running for 6.544)
+[0;39m
+[34m17:44:29.216[http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m
+[34m17:44:29.216[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[0;39m
+[34m17:44:29.221[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+[0;39m
+[34m17:44:29.314[http-nio-8080-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:3726}] to localhost:27017
+[0;39m
+[34m17:45:28.656[SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[0;39m
+[34m17:45:28.671[SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:3726}] to localhost:27017 because the pool has been closed.
+[0;39m
+[34m17:45:34.017[background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+[0;39m
+[34m17:45:34.682[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - The following profiles are active: dev
+[0;39m
+[34m17:45:36.142[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m17:45:36.280[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 135ms. Found 3 MongoDB repository interfaces.
+[0;39m
+[34m17:45:36.505[main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=be5c81a9-f5c0-3a40-bb62-b2d8f8e9f8c5
+[0;39m
+[34m17:45:36.858[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m17:45:36.871[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m17:45:36.871[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m17:45:36.872[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+[0;39m
+[34m17:45:37.116[main] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m17:45:37.116[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2412 ms
+[0;39m
+[34m17:45:37.276[main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[0;39m
+[34m17:45:37.398[cluster-ClusterId{value='663cbe6919c47464003282fe', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3727}] to localhost:27017
+[0;39m
+[34m17:45:37.415[cluster-ClusterId{value='663cbe6919c47464003282fe', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=13159500}
+[0;39m
+[31m17:45:39.075[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m17:45:39.075[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[31m17:45:39.089[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m17:45:39.089[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[34m17:45:39.330[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[0;39m
+[31m17:45:39.715[main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[0;39m
+[34m17:45:39.887[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m17:45:39.948[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/impactmoniter'
+[0;39m
+[34m17:45:40.541[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - Started MonitorErrorPredictionServiceApplication in 7.078 seconds (JVM running for 7.943)
+[0;39m
+[34m17:45:40.755[http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m
+[34m17:45:40.755[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[0;39m
+[34m17:45:40.765[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+[0;39m
+[34m17:45:40.862[http-nio-8080-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:3728}] to localhost:27017
+[0;39m
+[34m17:46:35.363[SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[0;39m
+[34m17:46:35.381[SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:3728}] to localhost:27017 because the pool has been closed.
+[0;39m
+[34m17:46:40.490[background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+[0;39m
+[34m17:46:41.174[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - The following profiles are active: dev
+[0;39m
+[34m17:46:42.675[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m17:46:42.812[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 132ms. Found 3 MongoDB repository interfaces.
+[0;39m
+[34m17:46:43.077[main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=be5c81a9-f5c0-3a40-bb62-b2d8f8e9f8c5
+[0;39m
+[34m17:46:43.415[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m17:46:43.429[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m17:46:43.429[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m17:46:43.430[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+[0;39m
+[34m17:46:43.649[main] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m17:46:43.649[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2453 ms
+[0;39m
+[34m17:46:43.804[main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[0;39m
+[34m17:46:43.900[cluster-ClusterId{value='663cbeab96e5db09a1b86250', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3729}] to localhost:27017
+[0;39m
+[34m17:46:43.906[cluster-ClusterId{value='663cbeab96e5db09a1b86250', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3617700}
+[0;39m
+[31m17:46:45.476[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m17:46:45.476[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[31m17:46:45.495[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m17:46:45.495[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[34m17:46:45.736[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[0;39m
+[31m17:46:46.156[main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[0;39m
+[34m17:46:46.318[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m17:46:46.377[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/impactmoniter'
+[0;39m
+[34m17:46:46.952[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - Started MonitorErrorPredictionServiceApplication in 7.007 seconds (JVM running for 7.801)
+[0;39m
+[34m17:46:49.815[http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m
+[34m17:46:49.815[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[0;39m
+[34m17:46:49.820[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+[0;39m
+[34m17:46:49.911[http-nio-8080-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:3730}] to localhost:27017
+[0;39m
+[34m17:47:02.844[SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[0;39m
+[34m17:47:02.858[SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:3730}] to localhost:27017 because the pool has been closed.
+[0;39m
+[34m17:47:07.887[background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+[0;39m
+[34m17:47:08.458[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - The following profiles are active: dev
+[0;39m
+[34m17:47:09.428[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m17:47:09.577[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 146ms. Found 3 MongoDB repository interfaces.
+[0;39m
+[34m17:47:09.827[main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=be5c81a9-f5c0-3a40-bb62-b2d8f8e9f8c5
+[0;39m
+[34m17:47:10.159[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m17:47:10.169[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m17:47:10.170[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m17:47:10.170[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+[0;39m
+[34m17:47:10.393[main] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m17:47:10.393[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1916 ms
+[0;39m
+[34m17:47:10.553[main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[0;39m
+[34m17:47:10.658[cluster-ClusterId{value='663cbec68c785b58f02ddfcd', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3731}] to localhost:27017
+[0;39m
+[34m17:47:10.687[cluster-ClusterId{value='663cbec68c785b58f02ddfcd', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=24757000}
+[0;39m
+[31m17:47:12.338[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m17:47:12.338[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[31m17:47:12.350[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m17:47:12.351[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[34m17:47:12.552[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[0;39m
+[31m17:47:12.898[main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[0;39m
+[34m17:47:13.034[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m17:47:13.090[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/impactmoniter'
+[0;39m
+[34m17:47:13.679[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - Started MonitorErrorPredictionServiceApplication in 6.304 seconds (JVM running for 7.079)
+[0;39m
+[34m17:47:15.448[http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m
+[34m17:47:15.448[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[0;39m
+[34m17:47:15.453[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+[0;39m
+[34m17:47:15.530[http-nio-8080-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:3732}] to localhost:27017
+[0;39m
+[34m17:53:51.957[SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[0;39m
+[34m17:53:51.969[SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:3732}] to localhost:27017 because the pool has been closed.
+[0;39m
+[34m17:53:57.179[background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+[0;39m
+[34m17:53:57.724[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - The following profiles are active: dev
+[0;39m
+[34m17:53:59.108[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m17:53:59.243[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 131ms. Found 3 MongoDB repository interfaces.
+[0;39m
+[34m17:53:59.475[main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=be5c81a9-f5c0-3a40-bb62-b2d8f8e9f8c5
+[0;39m
+[34m17:53:59.789[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m17:53:59.798[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m17:53:59.799[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m17:53:59.799[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+[0;39m
+[34m17:54:00.018[main] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m17:54:00.019[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2279 ms
+[0;39m
+[34m17:54:00.193[main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[0;39m
+[34m17:54:00.285[cluster-ClusterId{value='663cc060a7c05f4173d042d4', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3733}] to localhost:27017
+[0;39m
+[34m17:54:00.291[cluster-ClusterId{value='663cc060a7c05f4173d042d4', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4029800}
+[0;39m
+[31m17:54:01.875[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m17:54:01.876[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[31m17:54:01.886[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m17:54:01.886[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[34m17:54:02.098[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[0;39m
+[31m17:54:02.492[main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[0;39m
+[34m17:54:02.648[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m17:54:02.703[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/impactmoniter'
+[0;39m
+[34m17:54:03.370[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - Started MonitorErrorPredictionServiceApplication in 6.767 seconds (JVM running for 7.604)
+[0;39m
+[34m17:54:21.932[http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m
+[34m17:54:21.932[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[0;39m
+[34m17:54:21.938[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+[0;39m
+[34m17:54:22.008[http-nio-8080-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:3734}] to localhost:27017
+[0;39m
+[34m17:54:50.328[SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[0;39m
+[34m17:54:50.350[SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:3734}] to localhost:27017 because the pool has been closed.
+[0;39m
+[34m17:54:56.955[background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+[0;39m
+[34m17:54:57.587[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - The following profiles are active: dev
+[0;39m
+[34m17:54:58.560[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m17:54:58.699[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 133ms. Found 3 MongoDB repository interfaces.
+[0;39m
+[34m17:54:58.926[main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=be5c81a9-f5c0-3a40-bb62-b2d8f8e9f8c5
+[0;39m
+[34m17:54:59.251[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m17:54:59.260[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m17:54:59.261[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m17:54:59.261[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+[0;39m
+[34m17:54:59.534[main] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m17:54:59.534[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1926 ms
+[0;39m
+[34m17:54:59.734[main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[0;39m
+[34m17:54:59.882[cluster-ClusterId{value='663cc09b79c25707d83a0023', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3735}] to localhost:27017
+[0;39m
+[34m17:54:59.911[cluster-ClusterId{value='663cc09b79c25707d83a0023', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=21149000}
+[0;39m
+[31m17:55:01.515[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m17:55:01.515[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[31m17:55:01.533[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m17:55:01.533[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[34m17:55:01.746[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[0;39m
+[31m17:55:02.179[main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[0;39m
+[34m17:55:02.317[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m17:55:02.361[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/impactmoniter'
+[0;39m
+[34m17:55:02.917[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - Started MonitorErrorPredictionServiceApplication in 6.513 seconds (JVM running for 7.261)
+[0;39m
+[34m17:55:10.103[http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m
+[34m17:55:10.104[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[0;39m
+[34m17:55:10.113[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+[0;39m
+[34m17:55:10.220[http-nio-8080-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:3736}] to localhost:27017
+[0;39m
+[34m17:58:27.800[SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[0;39m
+[34m17:58:27.821[SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:3736}] to localhost:27017 because the pool has been closed.
+[0;39m
+[34m17:58:34.401[background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+[0;39m
+[34m17:58:35.075[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - The following profiles are active: dev
+[0;39m
+[34m17:58:36.565[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m17:58:36.708[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 137ms. Found 3 MongoDB repository interfaces.
+[0;39m
+[34m17:58:36.952[main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=be5c81a9-f5c0-3a40-bb62-b2d8f8e9f8c5
+[0;39m
+[34m17:58:37.284[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m17:58:37.293[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m17:58:37.293[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m17:58:37.293[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+[0;39m
+[34m17:58:37.516[main] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m17:58:37.516[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2421 ms
+[0;39m
+[34m17:58:37.718[main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[0;39m
+[34m17:58:37.823[cluster-ClusterId{value='663cc17570afe67c1c32e501', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3737}] to localhost:27017
+[0;39m
+[34m17:58:37.843[cluster-ClusterId{value='663cc17570afe67c1c32e501', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=15815200}
+[0;39m
+[31m17:58:39.138[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m17:58:39.139[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[31m17:58:39.155[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m17:58:39.155[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[34m17:58:39.307[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[0;39m
+[31m17:58:39.618[main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[0;39m
+[34m17:58:39.738[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m17:58:39.791[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/impactmoniter'
+[0;39m
+[34m17:58:40.257[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - Started MonitorErrorPredictionServiceApplication in 6.405 seconds (JVM running for 7.214)
+[0;39m
+[34m17:58:46.886[http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m
+[34m17:58:46.886[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[0;39m
+[34m17:58:46.899[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+[0;39m
+[34m17:58:46.960[http-nio-8080-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:3738}] to localhost:27017
+[0;39m
+[34m18:02:18.060[SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[0;39m
+[34m18:02:18.078[SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:3738}] to localhost:27017 because the pool has been closed.
+[0;39m
+[34m18:02:22.925[background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+[0;39m
+[34m18:02:23.507[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - The following profiles are active: dev
+[0;39m
+[34m18:02:24.949[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m18:02:25.093[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 141ms. Found 3 MongoDB repository interfaces.
+[0;39m
+[34m18:02:25.309[main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=be5c81a9-f5c0-3a40-bb62-b2d8f8e9f8c5
+[0;39m
+[34m18:02:25.628[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m18:02:25.637[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m18:02:25.637[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m18:02:25.637[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+[0;39m
+[34m18:02:25.842[main] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m18:02:25.842[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2319 ms
+[0;39m
+[34m18:02:25.992[main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[0;39m
+[34m18:02:26.085[cluster-ClusterId{value='663cc259ee3d014f73dc740b', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3739}] to localhost:27017
+[0;39m
+[34m18:02:26.093[cluster-ClusterId{value='663cc259ee3d014f73dc740b', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4558800}
+[0;39m
+[31m18:02:27.380[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m18:02:27.380[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[31m18:02:27.387[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m18:02:27.387[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[34m18:02:27.535[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[0;39m
+[31m18:02:27.848[main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[0;39m
+[34m18:02:27.973[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m18:02:28.049[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/impactmoniter'
+[0;39m
+[34m18:02:28.630[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - Started MonitorErrorPredictionServiceApplication in 6.22 seconds (JVM running for 7.033)
+[0;39m
+[34m18:03:02.976[http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m
+[34m18:03:02.976[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[0;39m
+[34m18:03:02.981[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+[0;39m
+[34m18:03:03.070[http-nio-8080-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:3740}] to localhost:27017
+[0;39m
+[31m18:03:03.498[http-nio-8080-exec-1] WARN  o.a.p.pdmodel.PDPageContentStream - You did not call endText(), some viewers won't display your text
+[0;39m
+[1;31m18:03:03.507[http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/impactmoniter] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Error: Nested beginText() calls are not allowed.] with root cause
+[0;39m
+java.lang.IllegalStateException: Error: Nested beginText() calls are not allowed.
+	at org.apache.pdfbox.pdmodel.PDPageContentStream.beginText(PDPageContentStream.java:368)
+	at com.abfintech.moniter.engine.service.EmailNotificationConsumer.pdfGenerator(EmailNotificationConsumer.java:79)
+	at com.abfintech.moniter.engine.service.EmailNotificationConsumer.receiveNotification(EmailNotificationConsumer.java:53)
+	at com.abfintech.moniter.engine.service.HitRequestService.hitTargetService(HitRequestService.java:166)
+	at com.abfintech.moniter.engine.controller.CheckPartnerRequestController.hitReq(CheckPartnerRequestController.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[34m18:04:02.531[SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[0;39m
+[34m18:04:02.545[SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:3740}] to localhost:27017 because the pool has been closed.
+[0;39m
+[34m18:04:07.685[background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+[0;39m
+[34m18:04:08.318[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - The following profiles are active: dev
+[0;39m
+[34m18:04:09.845[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m18:04:09.985[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 137ms. Found 3 MongoDB repository interfaces.
+[0;39m
+[34m18:04:10.236[main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=be5c81a9-f5c0-3a40-bb62-b2d8f8e9f8c5
+[0;39m
+[34m18:04:10.560[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m18:04:10.570[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m18:04:10.571[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m18:04:10.571[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+[0;39m
+[34m18:04:10.789[main] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m18:04:10.789[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2449 ms
+[0;39m
+[34m18:04:10.973[main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[0;39m
+[34m18:04:11.103[cluster-ClusterId{value='663cc2c2daae981df32992c0', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3741}] to localhost:27017
+[0;39m
+[34m18:04:11.140[cluster-ClusterId{value='663cc2c2daae981df32992c0', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=27983500}
+[0;39m
+[31m18:04:12.683[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m18:04:12.684[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[31m18:04:12.695[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m18:04:12.695[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[34m18:04:12.921[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[0;39m
+[31m18:04:13.256[main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[0;39m
+[34m18:04:13.411[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m18:04:13.478[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/impactmoniter'
+[0;39m
+[34m18:04:14.177[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - Started MonitorErrorPredictionServiceApplication in 7.036 seconds (JVM running for 7.871)
+[0;39m
+[34m18:04:18.890[http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m
+[34m18:04:18.890[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[0;39m
+[34m18:04:18.896[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+[0;39m
+[34m18:04:18.982[http-nio-8080-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:3742}] to localhost:27017
+[0;39m
+[1;31m18:04:19.186[http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/impactmoniter] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: 1-based index not found: 0] with root cause
+[0;39m
+java.lang.IllegalStateException: 1-based index not found: 0
+	at org.apache.pdfbox.pdmodel.PDPageTree.get(PDPageTree.java:321)
+	at org.apache.pdfbox.pdmodel.PDPageTree.get(PDPageTree.java:248)
+	at org.apache.pdfbox.pdmodel.PDDocument.getPage(PDDocument.java:1542)
+	at com.abfintech.moniter.engine.service.EmailNotificationConsumer.pdfGenerator(EmailNotificationConsumer.java:90)
+	at com.abfintech.moniter.engine.service.EmailNotificationConsumer.receiveNotification(EmailNotificationConsumer.java:53)
+	at com.abfintech.moniter.engine.service.HitRequestService.hitTargetService(HitRequestService.java:166)
+	at com.abfintech.moniter.engine.controller.CheckPartnerRequestController.hitReq(CheckPartnerRequestController.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[1;31m18:21:47.702[http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/impactmoniter] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: 1-based index not found: 0] with root cause
+[0;39m
+java.lang.IllegalStateException: 1-based index not found: 0
+	at org.apache.pdfbox.pdmodel.PDPageTree.get(PDPageTree.java:321)
+	at org.apache.pdfbox.pdmodel.PDPageTree.get(PDPageTree.java:248)
+	at org.apache.pdfbox.pdmodel.PDDocument.getPage(PDDocument.java:1542)
+	at com.abfintech.moniter.engine.service.EmailNotificationConsumer.pdfGenerator(EmailNotificationConsumer.java:90)
+	at com.abfintech.moniter.engine.service.EmailNotificationConsumer.receiveNotification(EmailNotificationConsumer.java:53)
+	at com.abfintech.moniter.engine.service.HitRequestService.hitTargetService(HitRequestService.java:166)
+	at com.abfintech.moniter.engine.controller.CheckPartnerRequestController.hitReq(CheckPartnerRequestController.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[34m18:21:56.573[SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[0;39m
+[34m18:21:56.594[SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:3742}] to localhost:27017 because the pool has been closed.
+[0;39m
+[34m18:22:06.183[background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+[0;39m
+[34m18:22:06.905[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - The following profiles are active: dev
+[0;39m
+[34m18:22:08.478[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m18:22:08.618[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 137ms. Found 3 MongoDB repository interfaces.
+[0;39m
+[34m18:22:08.854[main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=be5c81a9-f5c0-3a40-bb62-b2d8f8e9f8c5
+[0;39m
+[34m18:22:09.190[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m18:22:09.203[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m18:22:09.203[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m18:22:09.203[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+[0;39m
+[34m18:22:09.455[main] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m18:22:09.456[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2534 ms
+[0;39m
+[34m18:22:09.603[main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[0;39m
+[34m18:22:09.676[cluster-ClusterId{value='663cc6f94e3690668be10b0b', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3743}] to localhost:27017
+[0;39m
+[34m18:22:09.691[cluster-ClusterId{value='663cc6f94e3690668be10b0b', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=11179300}
+[0;39m
+[31m18:22:11.123[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m18:22:11.124[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[31m18:22:11.138[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m18:22:11.139[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[34m18:22:11.323[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[0;39m
+[31m18:22:11.691[main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[0;39m
+[34m18:22:11.807[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m18:22:11.860[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/impactmoniter'
+[0;39m
+[34m18:22:12.325[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - Started MonitorErrorPredictionServiceApplication in 6.755 seconds (JVM running for 7.58)
+[0;39m
+[34m18:22:55.452[http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m
+[34m18:22:55.452[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[0;39m
+[34m18:22:55.458[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+[0;39m
+[34m18:22:55.539[http-nio-8080-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:3744}] to localhost:27017
+[0;39m
+[34m18:23:48.571[SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[0;39m
+[34m18:23:48.584[SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:3744}] to localhost:27017 because the pool has been closed.
+[0;39m
+[34m18:23:54.112[background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+[0;39m
+[34m18:23:54.706[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - The following profiles are active: dev
+[0;39m
+[34m18:23:56.263[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m18:23:56.392[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 125ms. Found 3 MongoDB repository interfaces.
+[0;39m
+[34m18:23:56.625[main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=be5c81a9-f5c0-3a40-bb62-b2d8f8e9f8c5
+[0;39m
+[34m18:23:56.945[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m18:23:56.953[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m18:23:56.954[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m18:23:56.954[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+[0;39m
+[34m18:23:57.192[main] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m18:23:57.192[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2469 ms
+[0;39m
+[34m18:23:57.397[main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[0;39m
+[34m18:23:57.512[cluster-ClusterId{value='663cc76577263c0e6203f467', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3745}] to localhost:27017
+[0;39m
+[34m18:23:57.536[cluster-ClusterId{value='663cc76577263c0e6203f467', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=19501200}
+[0;39m
+[31m18:23:59.061[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m18:23:59.061[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[31m18:23:59.076[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m18:23:59.076[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[34m18:23:59.280[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[0;39m
+[31m18:23:59.662[main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[0;39m
+[34m18:23:59.815[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m18:23:59.874[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/impactmoniter'
+[0;39m
+[34m18:24:00.311[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - Started MonitorErrorPredictionServiceApplication in 6.736 seconds (JVM running for 7.554)
+[0;39m
+[34m18:24:14.501[http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m
+[34m18:24:14.501[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[0;39m
+[34m18:24:14.506[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+[0;39m
+[34m18:24:14.604[http-nio-8080-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:3746}] to localhost:27017
+[0;39m
+[34m18:25:11.498[SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[0;39m
+[34m18:25:11.513[SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:3746}] to localhost:27017 because the pool has been closed.
+[0;39m
+[34m18:25:16.893[background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+[0;39m
+[34m18:25:17.618[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - The following profiles are active: dev
+[0;39m
+[34m18:25:19.068[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m18:25:19.197[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 125ms. Found 3 MongoDB repository interfaces.
+[0;39m
+[34m18:25:19.434[main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=be5c81a9-f5c0-3a40-bb62-b2d8f8e9f8c5
+[0;39m
+[34m18:25:19.750[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m18:25:19.763[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m18:25:19.763[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m18:25:19.763[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+[0;39m
+[34m18:25:20.013[main] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m18:25:20.013[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2372 ms
+[0;39m
+[34m18:25:20.177[main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[0;39m
+[34m18:25:20.282[cluster-ClusterId{value='663cc7b8d8a8650035a78005', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3747}] to localhost:27017
+[0;39m
+[34m18:25:20.296[cluster-ClusterId{value='663cc7b8d8a8650035a78005', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=5554200}
+[0;39m
+[31m18:25:21.951[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m18:25:21.951[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[31m18:25:21.963[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m18:25:21.964[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[34m18:25:22.313[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[0;39m
+[31m18:25:22.642[main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[0;39m
+[34m18:25:22.760[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m18:25:22.790[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/impactmoniter'
+[0;39m
+[34m18:25:23.377[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - Started MonitorErrorPredictionServiceApplication in 7.156 seconds (JVM running for 7.984)
+[0;39m
+[34m18:27:23.985[http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m
+[34m18:27:23.985[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[0;39m
+[34m18:27:23.992[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+[0;39m
+[34m18:27:24.072[http-nio-8080-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:3748}] to localhost:27017
+[0;39m
+[34m18:28:28.483[SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[0;39m
+[34m18:28:28.497[SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:3748}] to localhost:27017 because the pool has been closed.
+[0;39m
+[34m18:28:34.343[background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+[0;39m
+[34m18:28:35.007[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - The following profiles are active: dev
+[0;39m
+[34m18:28:36.540[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m18:28:36.681[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 138ms. Found 3 MongoDB repository interfaces.
+[0;39m
+[34m18:28:36.929[main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=be5c81a9-f5c0-3a40-bb62-b2d8f8e9f8c5
+[0;39m
+[34m18:28:37.256[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m18:28:37.264[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m18:28:37.265[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m18:28:37.265[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+[0;39m
+[34m18:28:37.505[main] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m18:28:37.505[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2477 ms
+[0;39m
+[34m18:28:37.661[main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[0;39m
+[34m18:28:37.779[cluster-ClusterId{value='663cc87dd4fd6410d3562bef', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3749}] to localhost:27017
+[0;39m
+[34m18:28:37.791[cluster-ClusterId{value='663cc87dd4fd6410d3562bef', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4232500}
+[0;39m
+[31m18:28:39.310[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m18:28:39.310[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[31m18:28:39.323[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m18:28:39.323[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[34m18:28:39.505[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[0;39m
+[31m18:28:39.892[main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[0;39m
+[34m18:28:40.028[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m18:28:40.076[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/impactmoniter'
+[0;39m
+[34m18:28:40.749[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - Started MonitorErrorPredictionServiceApplication in 7.006 seconds (JVM running for 7.852)
+[0;39m
+[34m18:28:53.835[http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m
+[34m18:28:53.836[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[0;39m
+[34m18:28:53.841[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+[0;39m
+[34m18:28:53.917[http-nio-8080-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:3750}] to localhost:27017
+[0;39m
+[34m18:29:20.102[SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[0;39m
+[34m18:29:20.117[SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:3750}] to localhost:27017 because the pool has been closed.
+[0;39m
+[34m18:29:25.595[background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+[0;39m
+[34m18:29:26.147[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - The following profiles are active: dev
+[0;39m
+[34m18:29:27.125[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m18:29:27.269[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 141ms. Found 3 MongoDB repository interfaces.
+[0;39m
+[34m18:29:27.496[main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=be5c81a9-f5c0-3a40-bb62-b2d8f8e9f8c5
+[0;39m
+[34m18:29:27.823[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m18:29:27.831[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m18:29:27.831[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m18:29:27.832[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+[0;39m
+[34m18:29:28.074[main] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m18:29:28.074[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1911 ms
+[0;39m
+[34m18:29:28.253[main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[0;39m
+[34m18:29:28.383[cluster-ClusterId{value='663cc8b07e8b4b7c6315a4b7', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3751}] to localhost:27017
+[0;39m
+[34m18:29:28.392[cluster-ClusterId{value='663cc8b07e8b4b7c6315a4b7', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4319600}
+[0;39m
+[31m18:29:29.897[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m18:29:29.897[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[31m18:29:29.909[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m18:29:29.909[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[34m18:29:30.116[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[0;39m
+[31m18:29:30.458[main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[0;39m
+[34m18:29:30.582[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m18:29:30.631[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/impactmoniter'
+[0;39m
+[34m18:29:31.086[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - Started MonitorErrorPredictionServiceApplication in 6.026 seconds (JVM running for 6.824)
+[0;39m
+[34m18:31:13.450[http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m
+[34m18:31:13.450[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[0;39m
+[34m18:31:13.463[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+[0;39m
+[34m18:31:13.553[http-nio-8080-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:3752}] to localhost:27017
+[0;39m
+[34m18:31:47.560[SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[0;39m
+[34m18:31:47.572[SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:3752}] to localhost:27017 because the pool has been closed.
+[0;39m
+[34m18:31:53.242[background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+[0;39m
+[34m18:31:53.799[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - The following profiles are active: dev
+[0;39m
+[34m18:31:55.347[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m18:31:55.480[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 130ms. Found 3 MongoDB repository interfaces.
+[0;39m
+[34m18:31:55.717[main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=be5c81a9-f5c0-3a40-bb62-b2d8f8e9f8c5
+[0;39m
+[34m18:31:56.025[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m18:31:56.037[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m18:31:56.037[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m18:31:56.038[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+[0;39m
+[34m18:31:56.331[main] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m18:31:56.331[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2514 ms
+[0;39m
+[34m18:31:56.482[main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[0;39m
+[34m18:31:56.575[cluster-ClusterId{value='663cc9440c8e7f42c98a4451', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3753}] to localhost:27017
+[0;39m
+[34m18:31:56.591[cluster-ClusterId{value='663cc9440c8e7f42c98a4451', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=8444100}
+[0;39m
+[31m18:31:57.745[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m18:31:57.746[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[31m18:31:57.757[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m18:31:57.757[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[34m18:31:57.910[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[0;39m
+[31m18:31:58.189[main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[0;39m
+[34m18:31:58.265[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m18:31:58.289[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/impactmoniter'
+[0;39m
+[34m18:31:58.650[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - Started MonitorErrorPredictionServiceApplication in 5.968 seconds (JVM running for 6.797)
+[0;39m
+[34m18:32:16.310[http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m
+[34m18:32:16.310[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[0;39m
+[34m18:32:16.322[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+[0;39m
+[34m18:32:16.449[http-nio-8080-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:3754}] to localhost:27017
+[0;39m
+[34m18:33:42.373[SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[0;39m
+[34m18:33:42.382[SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:3754}] to localhost:27017 because the pool has been closed.
+[0;39m
+[34m18:33:48.026[background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+[0;39m
+[34m18:33:48.630[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - The following profiles are active: dev
+[0;39m
+[34m18:33:50.130[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m18:33:50.285[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 151ms. Found 3 MongoDB repository interfaces.
+[0;39m
+[34m18:33:50.522[main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=be5c81a9-f5c0-3a40-bb62-b2d8f8e9f8c5
+[0;39m
+[34m18:33:50.870[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m18:33:50.884[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m18:33:50.884[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m18:33:50.884[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+[0;39m
+[34m18:33:51.192[main] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m18:33:51.192[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2544 ms
+[0;39m
+[34m18:33:51.372[main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[0;39m
+[34m18:33:51.491[cluster-ClusterId{value='663cc9b7f4823c0cf98cc2d3', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3755}] to localhost:27017
+[0;39m
+[34m18:33:51.507[cluster-ClusterId{value='663cc9b7f4823c0cf98cc2d3', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=10215200}
+[0;39m
+[31m18:33:52.892[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m18:33:52.892[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[31m18:33:52.907[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m18:33:52.907[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[34m18:33:53.128[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[0;39m
+[31m18:33:53.503[main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[0;39m
+[34m18:33:53.649[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m18:33:53.701[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/impactmoniter'
+[0;39m
+[34m18:33:54.107[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - Started MonitorErrorPredictionServiceApplication in 6.609 seconds (JVM running for 7.475)
+[0;39m
+[34m18:34:15.362[SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[0;39m
+[34m18:34:21.041[background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+[0;39m
+[34m18:34:21.619[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - The following profiles are active: dev
+[0;39m
+[34m18:34:22.596[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m18:34:22.780[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 179ms. Found 3 MongoDB repository interfaces.
+[0;39m
+[34m18:34:23.029[main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=be5c81a9-f5c0-3a40-bb62-b2d8f8e9f8c5
+[0;39m
+[34m18:34:23.395[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m18:34:23.406[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m18:34:23.406[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m18:34:23.407[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+[0;39m
+[34m18:34:23.718[main] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m18:34:23.719[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2083 ms
+[0;39m
+[34m18:34:23.893[main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[0;39m
+[34m18:34:23.983[cluster-ClusterId{value='663cc9d79fae836d49c6fa5d', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3756}] to localhost:27017
+[0;39m
+[34m18:34:23.993[cluster-ClusterId{value='663cc9d79fae836d49c6fa5d', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=6566000}
+[0;39m
+[31m18:34:25.080[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m18:34:25.080[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[31m18:34:25.090[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m18:34:25.091[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[34m18:34:25.225[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[0;39m
+[31m18:34:25.513[main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[0;39m
+[34m18:34:25.613[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m18:34:25.638[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/impactmoniter'
+[0;39m
+[34m18:34:25.991[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - Started MonitorErrorPredictionServiceApplication in 5.461 seconds (JVM running for 6.281)
+[0;39m
+[34m18:41:09.102[SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[0;39m
+[34m18:41:15.807[background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+[0;39m
+[34m18:41:16.365[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - The following profiles are active: dev
+[0;39m
+[34m18:41:17.877[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m18:41:18.033[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 153ms. Found 3 MongoDB repository interfaces.
+[0;39m
+[34m18:41:18.277[main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=be5c81a9-f5c0-3a40-bb62-b2d8f8e9f8c5
+[0;39m
+[34m18:41:18.601[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m18:41:18.625[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m18:41:18.626[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m18:41:18.626[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+[0;39m
+[34m18:41:18.890[main] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m18:41:18.891[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2507 ms
+[0;39m
+[34m18:41:19.080[main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[0;39m
+[34m18:41:19.216[cluster-ClusterId{value='663ccb77bb9d7a67d7edffb4', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3757}] to localhost:27017
+[0;39m
+[34m18:41:19.234[cluster-ClusterId{value='663ccb77bb9d7a67d7edffb4', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=12833400}
+[0;39m
+[31m18:41:20.483[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m18:41:20.483[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[31m18:41:20.497[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m18:41:20.497[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[34m18:41:20.718[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[0;39m
+[31m18:41:21.064[main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[0;39m
+[34m18:41:21.167[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m18:41:21.206[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/impactmoniter'
+[0;39m
+[34m18:41:21.601[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - Started MonitorErrorPredictionServiceApplication in 6.399 seconds (JVM running for 7.262)
+[0;39m
+[34m18:41:28.607[SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[0;39m
+[34m18:41:34.283[background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+[0;39m
+[34m18:41:34.827[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - The following profiles are active: dev
+[0;39m
+[34m18:41:35.788[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m18:41:35.918[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 127ms. Found 3 MongoDB repository interfaces.
+[0;39m
+[34m18:41:36.145[main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=be5c81a9-f5c0-3a40-bb62-b2d8f8e9f8c5
+[0;39m
+[34m18:41:36.488[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m18:41:36.500[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m18:41:36.500[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m18:41:36.500[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+[0;39m
+[34m18:41:36.737[main] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m18:41:36.737[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1892 ms
+[0;39m
+[34m18:41:36.895[main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[0;39m
+[34m18:41:36.981[cluster-ClusterId{value='663ccb881a959e7f3435f953', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3758}] to localhost:27017
+[0;39m
+[34m18:41:36.994[cluster-ClusterId{value='663ccb881a959e7f3435f953', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=8360200}
+[0;39m
+[31m18:41:38.482[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m18:41:38.482[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[31m18:41:38.492[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m18:41:38.493[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[34m18:41:38.675[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[0;39m
+[31m18:41:38.932[main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[0;39m
+[34m18:41:39.014[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m18:41:39.034[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/impactmoniter'
+[0;39m
+[34m18:41:39.419[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - Started MonitorErrorPredictionServiceApplication in 5.692 seconds (JVM running for 6.528)
+[0;39m
+[34m18:41:45.136[SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[0;39m
+[34m18:41:47.507[background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+[0;39m
+[34m18:41:48.114[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - The following profiles are active: dev
+[0;39m
+[34m18:41:48.728[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m18:41:48.861[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 130ms. Found 3 MongoDB repository interfaces.
+[0;39m
+[34m18:41:49.095[main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=be5c81a9-f5c0-3a40-bb62-b2d8f8e9f8c5
+[0;39m
+[34m18:41:49.413[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m18:41:49.420[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m18:41:49.420[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m18:41:49.421[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+[0;39m
+[34m18:41:49.669[main] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m18:41:49.670[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1537 ms
+[0;39m
+[34m18:41:49.823[main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[0;39m
+[34m18:41:49.926[cluster-ClusterId{value='663ccb95b3a24a04f44723af', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3759}] to localhost:27017
+[0;39m
+[34m18:41:49.934[cluster-ClusterId{value='663ccb95b3a24a04f44723af', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4077300}
+[0;39m
+[31m18:41:51.047[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m18:41:51.047[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[31m18:41:51.056[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m18:41:51.056[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[34m18:41:51.211[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[0;39m
+[31m18:41:51.486[main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[0;39m
+[34m18:41:51.564[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m18:41:51.602[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/impactmoniter'
+[0;39m
+[34m18:41:52.013[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - Started MonitorErrorPredictionServiceApplication in 5.027 seconds (JVM running for 6.157)
+[0;39m
+[34m18:41:54.836[http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m
+[34m18:41:54.836[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[0;39m
+[34m18:41:54.841[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+[0;39m
+[34m18:41:54.932[http-nio-8080-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:3760}] to localhost:27017
+[0;39m
+[34m18:42:23.507[SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[0;39m
+[34m18:42:23.515[SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:3760}] to localhost:27017 because the pool has been closed.
+[0;39m
+[34m18:42:29.412[background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+[0;39m
+[34m18:42:30.025[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - The following profiles are active: dev
+[0;39m
+[34m18:42:30.945[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m18:42:31.075[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 128ms. Found 3 MongoDB repository interfaces.
+[0;39m
+[34m18:42:31.306[main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=be5c81a9-f5c0-3a40-bb62-b2d8f8e9f8c5
+[0;39m
+[34m18:42:31.625[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m18:42:31.633[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m18:42:31.634[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m18:42:31.634[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+[0;39m
+[34m18:42:31.887[main] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m18:42:31.887[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1843 ms
+[0;39m
+[34m18:42:32.036[main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[0;39m
+[34m18:42:32.135[cluster-ClusterId{value='663ccbc061bf1c6931c2a879', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3761}] to localhost:27017
+[0;39m
+[34m18:42:32.141[cluster-ClusterId{value='663ccbc061bf1c6931c2a879', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3909700}
+[0;39m
+[31m18:42:33.265[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m18:42:33.265[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[31m18:42:33.277[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m18:42:33.277[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[34m18:42:33.454[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[0;39m
+[31m18:42:33.797[main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[0;39m
+[34m18:42:33.877[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m18:42:33.906[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/impactmoniter'
+[0;39m
+[34m18:42:34.265[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - Started MonitorErrorPredictionServiceApplication in 5.502 seconds (JVM running for 6.367)
+[0;39m
+[34m18:42:47.814[http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m
+[34m18:42:47.815[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[0;39m
+[34m18:42:47.819[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+[0;39m
+[34m18:42:47.910[http-nio-8080-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:3762}] to localhost:27017
+[0;39m
+[34m18:43:16.268[SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[0;39m
+[34m18:43:16.276[SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:3762}] to localhost:27017 because the pool has been closed.
+[0;39m
+[34m18:43:21.706[background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+[0;39m
+[34m18:43:22.272[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - The following profiles are active: dev
+[0;39m
+[34m18:43:23.333[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m18:43:23.466[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 130ms. Found 3 MongoDB repository interfaces.
+[0;39m
+[34m18:43:23.697[main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=be5c81a9-f5c0-3a40-bb62-b2d8f8e9f8c5
+[0;39m
+[34m18:43:24.035[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m18:43:24.046[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m18:43:24.047[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m18:43:24.047[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+[0;39m
+[34m18:43:24.366[main] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m18:43:24.366[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2067 ms
+[0;39m
+[34m18:43:24.566[main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[0;39m
+[34m18:43:24.670[cluster-ClusterId{value='663ccbf469cf66318cdebab6', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3763}] to localhost:27017
+[0;39m
+[34m18:43:24.678[cluster-ClusterId{value='663ccbf469cf66318cdebab6', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=5141400}
+[0;39m
+[31m18:43:25.929[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m18:43:25.930[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[31m18:43:25.935[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m18:43:25.935[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[34m18:43:26.083[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[0;39m
+[31m18:43:26.383[main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[0;39m
+[34m18:43:26.476[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m18:43:26.507[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/impactmoniter'
+[0;39m
+[34m18:43:26.884[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - Started MonitorErrorPredictionServiceApplication in 5.709 seconds (JVM running for 6.507)
+[0;39m
+[34m18:43:36.558[SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[0;39m
+[34m18:43:42.129[background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+[0;39m
+[34m18:43:42.737[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - The following profiles are active: dev
+[0;39m
+[34m18:43:43.793[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m18:43:43.925[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 129ms. Found 3 MongoDB repository interfaces.
+[0;39m
+[34m18:43:44.164[main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=be5c81a9-f5c0-3a40-bb62-b2d8f8e9f8c5
+[0;39m
+[34m18:43:44.509[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m18:43:44.517[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m18:43:44.518[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m18:43:44.518[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+[0;39m
+[34m18:43:44.802[main] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m18:43:44.803[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2046 ms
+[0;39m
+[34m18:43:44.982[main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[0;39m
+[34m18:43:45.092[cluster-ClusterId{value='663ccc089f54b04547e84d46', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3764}] to localhost:27017
+[0;39m
+[34m18:43:45.099[cluster-ClusterId{value='663ccc089f54b04547e84d46', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=5104300}
+[0;39m
+[31m18:43:46.325[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m18:43:46.325[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[31m18:43:46.331[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m18:43:46.331[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[34m18:43:46.511[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[0;39m
+[31m18:43:46.932[main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[0;39m
+[34m18:43:47.034[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m18:43:47.061[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/impactmoniter'
+[0;39m
+[34m18:43:47.489[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - Started MonitorErrorPredictionServiceApplication in 6.02 seconds (JVM running for 6.87)
+[0;39m
+[34m18:43:51.210[http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m
+[34m18:43:51.211[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[0;39m
+[34m18:43:51.216[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+[0;39m
+[34m18:43:51.290[http-nio-8080-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:3765}] to localhost:27017
+[0;39m
+[34m18:47:38.382[SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[0;39m
+[34m18:47:38.399[SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:3765}] to localhost:27017 because the pool has been closed.
+[0;39m
+[34m18:49:20.502[background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+[0;39m
+[34m18:49:21.069[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - The following profiles are active: dev
+[0;39m
+[34m18:49:22.661[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m18:49:22.841[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 173ms. Found 3 MongoDB repository interfaces.
+[0;39m
+[34m18:49:23.123[main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=be5c81a9-f5c0-3a40-bb62-b2d8f8e9f8c5
+[0;39m
+[34m18:49:23.475[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m18:49:23.484[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m18:49:23.485[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m18:49:23.485[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+[0;39m
+[34m18:49:23.722[main] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m18:49:23.722[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2636 ms
+[0;39m
+[34m18:49:23.874[main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[0;39m
+[34m18:49:23.961[cluster-ClusterId{value='663ccd5b20c94f285bf0bbf4', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:3766}] to localhost:27017
+[0;39m
+[34m18:49:23.968[cluster-ClusterId{value='663ccd5b20c94f285bf0bbf4', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4445700}
+[0;39m
+[31m18:49:25.009[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m18:49:25.009[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[31m18:49:25.016[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m18:49:25.017[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[34m18:49:25.162[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[0;39m
+[31m18:49:25.427[main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[0;39m
+[34m18:49:25.503[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m18:49:25.534[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/impactmoniter'
+[0;39m
+[34m18:49:25.879[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - Started MonitorErrorPredictionServiceApplication in 5.905 seconds (JVM running for 6.785)
+[0;39m
+[34m18:49:30.726[http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m
+[34m18:49:30.726[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[0;39m
+[34m18:49:30.733[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+[0;39m
+[34m18:49:30.833[http-nio-8080-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:3767}] to localhost:27017
+[0;39m
