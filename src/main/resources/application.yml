@@ -4,6 +4,9 @@ spring:
     name:
       monitor-error-prediction-service
   cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
     kubernetes:
       reload.enabled: false
       enabled: false

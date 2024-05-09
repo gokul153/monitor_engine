@@ -6,14 +6,13 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.net.URI;
-import java.util.List;
 import java.util.Map;
 
 @FeignClient(value = "appointment", url = "http://localhost:8003/apollo/appointments/v1/appointments/v1/")
 public interface  RemoteServiceClient {
 
     @PostMapping
-    ResponseEntity<Object> sendPostRequest(URI url, @RequestBody Object requestBody, @RequestHeader Map<String, String> headers, @RequestParam Map<String, Object> params);
+    ResponseEntity<Object> sendPostRequest(URI url, @RequestBody Object requestBody, @RequestHeader Map<String, String> headers);
 
     @GetMapping
     ResponseEntity<Object> getAppointments();

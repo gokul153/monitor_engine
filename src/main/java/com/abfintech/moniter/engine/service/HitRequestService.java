@@ -53,7 +53,7 @@ public class HitRequestService {
                 if (Objects.nonNull(headers)) {
                     Map<String, String> headersMap = new HashMap<>();
 
-//                    response = remoteServiceClient.sendPostRequest(new URI("http://localhost:9191/crazyhotel/newentry"), requestBody, headers);
+                   // response = remoteServiceClient.sendPostRequest(new URI("http://localhost:9191/crazyhotel/newentry"), requestBody, headers);
                 } else {
                     //      response = remoteServiceClient.sendRequest(url, requestBody);
                 }
@@ -88,7 +88,7 @@ public class HitRequestService {
                     case POST:
 
                         try {
-                            response = remoteServiceClient.getDate("3");
+                            response =  remoteServiceClient.sendPostRequest(new URI("http://localhost:9191/crazyhotel/newentry"), request.getRequestBody(), request.getHeaders());
                             responseLogEntity.setResponse(response.getBody());
                             responseLogEntity.setTimestamp(LocalDateTime.now());
                             responseLogEntity.setResponseType(ResponseType.SUCCESS);
