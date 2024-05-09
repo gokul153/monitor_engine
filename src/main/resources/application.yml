@@ -17,6 +17,18 @@ spring:
       - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
       - org.springframework.boot.actuate.autoconfigure.security.servlet.ManagementWebSecurityAutoConfiguration
       - org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: impactmonitorengine@gmail.com
+    password: lqowjgxirzaypzxb
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
 
 exception:
   util:
@@ -62,3 +74,5 @@ feign:
     config:
       default:
         disableCaching: true
+
+

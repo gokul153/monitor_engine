@@ -1,0 +1,48 @@
+[34m09:52:12.611[background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.7.Final
+[0;39m
+[34m09:52:13.127[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - The following profiles are active: dev
+[0;39m
+[34m09:52:14.151[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m09:52:14.282[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 128ms. Found 3 MongoDB repository interfaces.
+[0;39m
+[34m09:52:14.471[main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f02c866a-2a76-3647-ae08-dd661207a9b9
+[0;39m
+[34m09:52:14.776[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m09:52:14.788[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m09:52:14.789[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m09:52:14.789[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+[0;39m
+[34m09:52:14.981[main] INFO  o.a.c.c.C.[.[.[/impactmoniter] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m09:52:14.981[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1838 ms
+[0;39m
+[34m09:52:15.132[main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[0;39m
+[34m09:52:15.199[cluster-ClusterId{value='663c4f779950b83943d55abd', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:1}] to localhost:27017
+[0;39m
+[34m09:52:15.212[cluster-ClusterId{value='663c4f779950b83943d55abd', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=11007400}
+[0;39m
+[31m09:52:15.635[main] WARN  o.s.c.o.FeignClientFactoryBean - The provided URL is empty. Will try picking an instance via load-balancing.
+[0;39m
+[31m09:52:15.986[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m09:52:15.986[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[31m09:52:15.990[main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+[0;39m
+[34m09:52:15.990[main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[0;39m
+[34m09:52:16.076[main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[0;39m
+[31m09:52:16.259[main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+[0;39m
+[34m09:52:16.329[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m09:52:16.356[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/impactmoniter'
+[0;39m
+[34m09:52:16.654[main] INFO  c.a.m.e.MonitorErrorPredictionServiceApplication - Started MonitorErrorPredictionServiceApplication in 4.546 seconds (JVM running for 5.237)
+[0;39m
