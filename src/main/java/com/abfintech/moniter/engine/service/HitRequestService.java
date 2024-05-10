@@ -221,6 +221,7 @@ public class HitRequestService {
                     AtomicReference<Double> count = new AtomicReference<>((double) 0);
                     AtomicReference<Double> num = new AtomicReference<>((double) 0);
                     responseLogEntityList.forEach(resp -> {
+                        dashResponse.setTimestamp(resp.getTimestamp());
                         count.getAndSet((double) (count.get() + 1));
                         if (resp.getResponseType().equals(ResponseType.SUCCESS)) {
 
