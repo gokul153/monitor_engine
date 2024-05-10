@@ -171,5 +171,14 @@ public class HitRequestService {
 
     }
 
+    public Set<String> getServices(){
+        Set<String> response = new LinkedHashSet<>();
+        List<RequestEntity> requestEntityList = requestRepository.findAll();
+        requestEntityList.forEach(req ->{
+            response.add(req.getImpactService());
+        });
+        return response;
+    }
+
 
 }
