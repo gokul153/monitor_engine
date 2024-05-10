@@ -17,6 +17,9 @@ public interface  RemoteServiceClient {
     @GetMapping
     ResponseEntity<Object> getAppointments();
 
+    @GetMapping
+    ResponseEntity<Object> sendGetRequest(URI url, @RequestHeader Map<String, String> headers,@RequestParam Map<String,Object> params);
+
     @GetMapping("/date")
     ResponseEntity<Object> getDate(@RequestParam String code);
 

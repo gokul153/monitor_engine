@@ -88,7 +88,7 @@ public class HitRequestService {
                     case POST:
 
                         try {
-                            response =  remoteServiceClient.sendPostRequest(new URI("http://localhost:9191/crazyhotel/newentry"), request.getRequestBody(), request.getHeaders());
+                            response =  remoteServiceClient.sendPostRequest(new URI(request.getUrl()), request.getRequestBody(), request.getHeaders());
                             responseLogEntity.setResponse(response.getBody());
                             responseLogEntity.setTimestamp(LocalDateTime.now());
                             responseLogEntity.setResponseType(ResponseType.SUCCESS);
@@ -104,7 +104,7 @@ public class HitRequestService {
                         break;
                     case GET:
                         try {
-                            response = remoteServiceClient.getAppointments();
+                            response = remoteServiceClient.sendGetRequest(new URI(request.getUrl()), request.getHeaders(),request.getParams());
                             responseLogEntity.setResponse(response.getBody());
                             responseLogEntity.setTimestamp(LocalDateTime.now());
                             responseLogEntity.setResponseType(ResponseType.SUCCESS);
