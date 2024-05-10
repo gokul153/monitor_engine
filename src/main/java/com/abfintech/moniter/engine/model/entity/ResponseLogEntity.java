@@ -19,4 +19,5 @@ public class ResponseLogEntity {
     private String triggerReference;
     private ResponseType responseType;
     private String requestName;
+    private String serviceName;
 }

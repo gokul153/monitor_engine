@@ -1,6 +1,7 @@
 package com.abfintech.moniter.engine.controller;
 
 import com.abfintech.moniter.engine.model.entity.ResponseLogEntity;
+import com.abfintech.moniter.engine.model.response.DashboardResponse;
 import com.abfintech.moniter.engine.model.response.HitReqResponse;
 import com.abfintech.moniter.engine.service.HitRequestService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +26,11 @@ public class CheckPartnerRequestController {
     public HitReqResponse hitReq(@RequestParam String impactService) throws URISyntaxException {
         return hitRequestService.hitTargetService(impactService);
 //        return ResponseEntity.ok("Request checked successfully");
+    }
+
+    @GetMapping("/dash")
+    public DashboardResponse getDash(){
+        return hitRequestService.getDashboard();
     }
 
 }
